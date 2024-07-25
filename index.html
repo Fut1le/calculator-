@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <header>
+            <h1>Advanced Calculator</h1>
+            <button id="theme-toggle">Toggle Theme</button>
+        </header>
+
+        <main>
+            <div id="mode-switch">
+                <button class="mode" data-mode="basic">Basic</button>
+                <button class="mode" data-mode="scientific">Scientific</button>
+                <button class="mode" data-mode="programmer">Programmer</button>
+            </div>
+
+            <div id="calculator">
+                <input type="text" id="display" disabled>
+                <div id="buttons">
+                    <!-- Buttons will be generated via JavaScript -->
+                </div>
+            </div>
+
+            <button id="toggle-history">Show/Hide History</button>
+            <div id="history" style="display: none;">
+                <h2>History</h2>
+                <ul id="history-list"></ul>
+                <button id="clear-history">Clear History</button>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
